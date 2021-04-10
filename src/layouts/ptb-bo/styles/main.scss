@@ -1,0 +1,151 @@
+@import "~antd/dist/antd.css";
+@import "./color.scss";
+@import "./antCustom.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab");
+
+body {
+    font-family: Roboto, Poppins, sans-serif;
+
+    .app-menu {
+        color: var(--colorScheme2);
+
+        .logo {
+            height: 60px;
+            background: linear-gradient(180deg, #ba2133 1.25%, #811521 100%);
+            padding: 5px 14px 14px;
+            margin-bottom: 20px;
+
+            .box {
+                background-image: url(../images/logo.png);
+                background-size: cover;
+                margin-left: 20px;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+            }
+        }
+
+        .user-info {
+            text-align: center;
+
+            .avatar {
+                background: #dee5f5;
+                width: 70px;
+                height: 70px;
+                border-radius: 40px;
+                margin: 10px auto;
+            }
+
+            .small-text {
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+
+        .loading {
+            padding: 0 20px;
+        }
+    }
+
+    .app-header {
+        padding: 0;
+        background: linear-gradient(180deg, #ba2133 1.25%, #811521 100%);
+        height: 60px;
+        line-height: 60px;
+        padding: 0 20px;
+        color: #fff;
+
+        .brand {
+            height: 55px;
+            overflow: hidden;
+            float: left;
+
+            img {
+                margin-top: 10px;
+                width: 130px;
+            }
+        }
+
+        .title {
+            // background: rgba($color: #000000, $alpha: 0.1);
+            font-size: 16px;
+            padding-left: 70px;
+            padding-top: 20px;
+
+            > div {
+                line-height: 20px;
+            }
+        }
+
+        .toolbar {
+            float: right;
+
+            .tbr-item {
+                display: inline-block;
+                padding: 0 15px;
+            }
+        }
+
+        .left {
+            display: inline-block;
+            width: calc(100vw - 500px);
+        }
+
+        .right {
+            float: right;
+            width: 200px;
+        }
+
+        .menus {
+            .item {
+                text-align: right;
+                cursor: pointer;
+
+                .anticon {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .app-content {
+        padding: 20px 30px;
+        font-size: 12px;
+    }
+
+    .app-footer {
+        .ant-layout-footer {
+            color: #fff;
+            background-color: var(--colorScheme2);
+            padding: 0 48px;
+            height: 48px;
+            line-height: 50px;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .app-header {
+            padding: 0 20px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .app-header {
+            padding: 0 20px;
+
+            .brand {
+                width: 40px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .app-header {
+            padding: 0 20px;
+        }
+    }
+}
+
+@import "./stin.scss";

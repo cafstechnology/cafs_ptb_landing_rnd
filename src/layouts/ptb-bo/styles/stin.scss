@@ -1,0 +1,71 @@
+body {
+    .no-sidebar {
+        .app-header {
+            left: 0;
+        }
+    }
+
+    .ant-menu-vertical {
+        border: 1px solid #999;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .float-right {
+        float: right;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .app-header {
+            position: relative;
+            left: 0;
+
+            .menus {
+                display: none;
+            }
+
+            .mobile-link {
+                position: absolute;
+                width: 30px;
+                height: 75px;
+                right: 15px;
+                top: 0px;
+                padding-top: 10px;
+                cursor: pointer;
+                margin: 0;
+
+                &.sign-out {
+                    width: auto;
+                    padding-top: 0;
+                }
+
+                .line {
+                    width: 100%;
+                    margin-top: 8px;
+
+                    border-top: 2px solid var(--colorScheme4);
+                }
+            }
+        }
+
+        .app-menu {
+            display: none;
+        }
+
+        .ant-breadcrumb {
+            left: 0;
+            top: 0;
+            margin-left: -14px;
+        }
+
+        .ant-menu-vertical {
+            border: none;
+        }
+    }
+}

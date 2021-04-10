@@ -1,0 +1,186 @@
+
+.ant-btn {
+    font-size: 12px;
+    height: 30px;
+    margin-top: 1px;
+    padding: 0 20px;
+    border-radius: 3em;
+
+    &.ant-btn-link {
+        padding: 0 5px;
+        height: auto;
+        // color: #980d09;
+    }
+
+    &:hover{
+        // background: #fa241d;
+        border-color: #980d09;
+        color: #980d09;
+    }
+}
+
+.ant-btn-primary {
+    background: #980d09;
+    border-color: #980d09;
+    border-radius: 3em;
+    &:hover{
+        background: #fa241d;
+        border-color: #980d09;
+        color: #fff;
+    }
+}
+
+.ant-btn-clear {
+    background: #009921;
+    border-color: #009921;
+    color: #fff;
+    border-radius: 3em;
+    &:hover{
+        background: #00d62f;
+        border-color: #00d62f;
+        color: #fff;
+    }
+}
+
+.ant-layout {
+    .ant-layout-sider {
+        background-color: var(--baseLight);
+    }
+
+    .ant-menu.ant-menu-dark,
+    .ant-menu-dark .ant-menu-sub,
+    .ant-menu.ant-menu-dark .ant-menu-sub {
+        background-color: var(--baseLight);
+        color: var(--colorScheme1);
+    }
+
+    .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        background-color: var(--colorScheme2);
+    }
+
+    .ant-menu-dark .ant-menu-item,
+    .ant-menu-dark .ant-menu-item-group-title,
+    .ant-menu-dark .ant-menu-item > a,
+    .ant-menu-dark .ant-menu-item > span > a {
+        color: var(--colorScheme1);
+    }
+
+    .ant-menu-dark .ant-menu-item:hover,
+    .ant-menu-dark .ant-menu-item-active,
+    .ant-menu-dark .ant-menu-submenu-active,
+    .ant-menu-dark .ant-menu-submenu-open,
+    .ant-menu-dark .ant-menu-submenu-selected,
+    .ant-menu-dark .ant-menu-submenu-title:hover {
+        color: var(--colorScheme1);
+    }
+
+    .ant-menu.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+    .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+    .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+    .ant-menu.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+    .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+    .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::before {
+        background: var(--colorScheme1);
+    }
+}
+
+.ant-form {
+    .ant-form-item {
+        margin-bottom: 5px;
+    }
+
+    &.ant-form-horizontal {
+        .ant-form-item-label {
+            text-align: left;
+        }
+    }
+
+    .ant-form-item-explain {
+        font-size: 12px;
+    }
+}
+
+.ant-card {
+    .ant-card-body {
+        padding: 15px;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.ant-table {
+    font-size: 13px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    .ant-table-thead > tr > th {
+        padding: 12px 20px;
+        background-color: var(--colorScheme1);
+        color: #fff;
+    }
+
+    .ant-table-tbody > tr > td,
+    .ant-table tfoot > tr > th,
+    .ant-table tfoot > tr > td {
+        padding: 8px 20px;
+    }
+}
+
+.ant-breadcrumb {
+    border-bottom: 2px solid var(--colorScheme1);
+    padding: 0 30px;
+    line-height: 40px;
+    background-color: rgba($color: #000000, $alpha: 0.02);
+}
+
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+    background-color: var(--colorScheme1);
+    font-size: 12px;
+}
+
+.ant-layout-sider-trigger {
+    background-color: var(--colorScheme6);
+    display: none;
+}
+
+.ant-pagination {
+    .ant-pagination-next {
+        margin-left: 8px;
+        &:hover:not(.ant-pagination-disabled) {
+            .ant-pagination-item-link {
+                border-color: var(--secondaryColor);
+                color: var(--secondaryColor);
+            }
+        }
+    }
+    .ant-pagination-prev {
+        &:hover:not(.ant-pagination-disabled) {
+            .ant-pagination-item-link {
+                border-color: var(--secondaryColor);
+                color: var(--secondaryColor);
+            }
+        }
+    }
+    .ant-pagination-item {
+        width: 10px;
+        margin-right: 5px;
+
+        a {
+            color: #a0a0a0;
+        }
+
+        &:hover a {
+            color: var(--colorScheme1);
+            border-color: var(--colorScheme1);
+        }
+    }
+    .ant-pagination-item-active {
+        border-color: var(--colorScheme2);
+        a {
+            color: var(--colorScheme1);
+            border-color: var(--colorScheme1);
+        }
+    }
+}
