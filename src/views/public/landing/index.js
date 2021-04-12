@@ -23,9 +23,14 @@ const menu = (
         </a>
         </Menu.Item>
         <Menu.Item danger>
-            <a target="_blank" rel="noopener noreferrer" href="/images/tahapan ver 2 revisi.jpeg">
+            <a target="_blank" rel="noopener noreferrer" href="/PENERIMAAN TARUNA STIN TAHUN 2021.pdf">
                 BROSUR PENDAFTARAN STIN (DOWNLOAD)
         </a>
+        </Menu.Item>
+        <Menu.Item danger>
+            <a target="_blank" rel="noopener noreferrer" href="/images/tahapan ver 2 revisi.jpeg">
+                MEKANISME PENDAFTARAN (DOWNLOAD)
+            </a>
         </Menu.Item>
         <Menu.Item danger>
             <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=Gwir1XYFAgQ">
@@ -56,7 +61,17 @@ const App = () => {
         {
             value: 'jadwal',
             text: 'BROSUR PENDAFTARAN STIN (DOWNLOAD)',
+            link: '/PENERIMAAN TARUNA STIN TAHUN 2021.pdf'
+        },
+        {
+            value: 'mekanisme',
+            text: 'MEKANISME PENDAFTARAN (DOWNLOAD)',
             link: '/images/tahapan ver 2 revisi.jpeg'
+        },
+        {
+            value: 'mekanismeVideo',
+            text: 'MEKANISME PENDAFTARAN (TONTON VIDEO)',
+            link: 'https://www.youtube.com/watch?v=Gwir1XYFAgQ'
         }
     ]
 
@@ -493,7 +508,7 @@ const App = () => {
                                 <div>
                                     <div className='footeritem-title'>
                                         <a href='https://wa.me/+6281223849839'>(0812) 2384 9839</a> <br />
-                                        <a href='https://wa.me/+6282123849840'>(0821) 2384 9840</a>
+                                        <a href='https://wa.me/+6281223849840'>(0812) 2384 9840</a>
                                     </div>
                                     <div className='footeritem-content'>
                                         WhatsApp
