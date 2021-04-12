@@ -149,7 +149,7 @@ export const faqs = [
   {
     title : 'Berapa Nilai Rata-Rata Rapor Minimal?', 
     content  : <>
-      Nilai Rata-Rata Minimal Adalah 70
+      Nilai Rata-Rata Minimal Adalah 75
     </>
   },{
     title : 'Jika Pernah Patah Tulang Apakah Tetap Akan Diterima?', 
@@ -165,7 +165,7 @@ export const faqs = [
   },{
     title : 'Berapa Tinggi Badan Dan Berat Badan Yang Dibutuhkan?', 
     content  : <>
-      Tinggi Badan Pria 165 cm, Wanita 155 cm dan Berat Badan Ideal
+      Tinggi Badan Pria 165 cm, Wanita 160 cm dan Berat Badan Ideal
     </>
   },{
     title : 'Berkenaan Dengan Gigi Apakah Ada Persyaratannya?', 
@@ -175,7 +175,7 @@ export const faqs = [
   },{
     title : 'Umur Berapa Saja Yang Bisa Mendaftar di STIN?', 
     content  : <>
-      Usia pada Saat Mendaftar Minimal 16 Tahun dan Maksimal 24 Tahun pada Tanggal 31 Desember 2021
+      Usia pada Saat Mendaftar Minimal 16 Tahun dan Maksimal 21 Tahun pada Tanggal 31 Desember 2021
     </>
   },{
     title : 'Apakah Ada Biaya Selama Seleksi?', 

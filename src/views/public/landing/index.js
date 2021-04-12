@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import ReactPlayer from 'react-player';
-import { Row, Col, Space, Collapse, Table, Button } from 'antd';
+import { Row, Col, Space, Collapse, Table, Button, Dropdown, Menu } from 'antd';
 import {
     HomeOutlined, MailOutlined, MessageOutlined, MobileOutlined,
-    MenuUnfoldOutlined, DownOutlined, UpOutlined
+    MenuUnfoldOutlined, DownOutlined, UpOutlined, SettingOutlined
 } from '@ant-design/icons';
 
 import { Content } from '../../../components'
@@ -15,6 +15,26 @@ const { Panel } = Collapse;
 const scrollStepInPx = "100";
 const delayInMs = "10.50";
 
+const menu = (
+    <Menu>
+        <Menu.Item danger>
+            <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/3wDPxPf">
+                PENGUMUMAN GUBERNUR STIN (DOWNLOAD)
+        </a>
+        </Menu.Item>
+        <Menu.Item danger>
+            <a target="_blank" rel="noopener noreferrer" href="/images/tahapan ver 2 revisi.jpeg">
+                BROSUR PENDAFTARAN STIN (DOWNLOAD)
+        </a>
+        </Menu.Item>
+        <Menu.Item danger>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=Gwir1XYFAgQ">
+                MEKANISME PENDAFTARAN (TONTON VIDEO)
+        </a>
+        </Menu.Item>
+    </Menu>
+);
+
 const App = () => {
     const wrapperRef = useRef(null);
 
@@ -24,20 +44,19 @@ const App = () => {
         { text: 'PERSYARATAN', link: '#requirement' },
         { text: 'TAHAPAN', link: '#stepflow' },
         { text: 'JADWAL', link: '#schedulelist' },
-        // { text: 'PENGUMUMAN', link: '#' },
         { text: 'FAQ', link: '#faqsection' },
     ]
 
     const pageList = [
         {
             value: 'pengumuman',
-            text: 'PENGUMUMAN GUBERNUR STIN No. PENG - 02/IV/2021 TENTANG SELEKSI PENERIMAAN TARUNA TARUNI SEKOLAH TINGGI INTELIJEN NEGARA TAHUN AKADEMIK 2021/2022 (DOWNLOAD)',
+            text: 'PENGUMUMAN GUBERNUR STIN (DOWNLOAD)',
             link: 'https://bit.ly/3wDPxPf'
         },
         {
             value: 'jadwal',
             text: 'BROSUR PENDAFTARAN STIN (DOWNLOAD)',
-            link: ''
+            link: '/images/tahapan ver 2 revisi.jpeg'
         }
     ]
 
@@ -138,6 +157,11 @@ const App = () => {
                         {navigations.map((m, idx) => {
                             return <li key={idx}><a href={m.link} onClick={closeMenu}>{m.text}</a></li>
                         })}
+                        <Dropdown overlay={menu}>
+                            <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+                                PENGUMUMAN <DownOutlined />
+                            </a>
+                        </Dropdown>
                     </ul>
                 </nav>
                 <div className="mobile-nav-overly"></div>
@@ -182,6 +206,15 @@ const App = () => {
                                             </div>
                                         </Col>
                                     ))}
+                                    <Col key="announcement">
+                                        <div className="nav-link">
+                                            <Dropdown overlay={menu}>
+                                                <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+                                                    PENGUMUMAN <DownOutlined />
+                                                </a>
+                                            </Dropdown>
+                                        </div>
+                                    </Col>
                                 </Row>
                             </div>
                         </Col>
