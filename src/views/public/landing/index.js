@@ -19,7 +19,7 @@ const menu = (
     <Menu>
         <Menu.Item danger>
             <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/3wDPxPf">
-                PENGUMUMAN GUBERNUR STIN (DOWNLOAD)
+                PENGUMUMAN PENERIMAAN TARUNA/I STIN TAHUN 2021 (DOWNLOAD)
         </a>
         </Menu.Item>
         <Menu.Item danger>
@@ -55,7 +55,7 @@ const App = () => {
     const pageList = [
         {
             value: 'pengumuman',
-            text: 'PENGUMUMAN GUBERNUR STIN (DOWNLOAD)',
+            text: 'PENGUMUMAN PENERIMAAN TARUNA/I STIN TAHUN 2021 (DOWNLOAD)',
             link: 'https://bit.ly/3wDPxPf'
         },
         {
@@ -274,7 +274,8 @@ const App = () => {
                         <div className='detail-container'>
                             <Row className='detail-item' gutter={[{ xs: 12, md: 24 }, { xs: 12, md: 24 }]}>
                                 <Col md={{ order: 1, span: 12 }} xs={{ order: 2, span: 24 }}>
-                                    <ReactPlayer url='https://www.youtube.com/watch?v=LHm7CvkcgLk' width='100%' />
+                                    {/* <ReactPlayer url='https://www.youtube.com/watch?v=LHm7CvkcgLk' width='100%' /> */}
+                                    <ReactPlayer url='https://youtu.be/9xDhs6cC9VA' width='100%' />
                                 </Col>
                                 <Col md={{ order: 2, span: 12 }} xs={{ order: 1, span: 24 }}>
                                     <ReactPlayer url='https://www.youtube.com/watch?v=Gwir1XYFAgQ' width='100%' />
