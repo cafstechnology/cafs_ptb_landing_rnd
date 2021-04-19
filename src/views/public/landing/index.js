@@ -19,7 +19,7 @@ const menu = (
     <Menu>
         <Menu.Item danger>
             <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/3wDPxPf">
-                PENGUMUMAN GUBERNUR STIN (DOWNLOAD)
+                PENGUMUMAN PENERIMAAN TARUNA/I STIN TAHUN 2021 (DOWNLOAD)
         </a>
         </Menu.Item>
         <Menu.Item danger>
@@ -55,7 +55,7 @@ const App = () => {
     const pageList = [
         {
             value: 'pengumuman',
-            text: 'PENGUMUMAN GUBERNUR STIN (DOWNLOAD)',
+            text: 'PENGUMUMAN PENERIMAAN TARUNA/I STIN TAHUN 2021 (DOWNLOAD)',
             link: 'https://bit.ly/3wDPxPf'
         },
         {
@@ -529,7 +529,7 @@ const App = () => {
                                     </div>
                                     <div className='footeritem-content'>
                                         Silahkan hubungi kami apabila ada pertanyaan sehubungan Penerimaan.
-                                </div>
+                                    </div>
                                 </div>
                             </Space>
                         </Col>
