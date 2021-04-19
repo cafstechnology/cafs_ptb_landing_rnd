@@ -274,7 +274,8 @@ const App = () => {
                         <div className='detail-container'>
                             <Row className='detail-item' gutter={[{ xs: 12, md: 24 }, { xs: 12, md: 24 }]}>
                                 <Col md={{ order: 1, span: 12 }} xs={{ order: 2, span: 24 }}>
-                                    <ReactPlayer url='https://www.youtube.com/watch?v=LHm7CvkcgLk' width='100%' />
+                                    {/* <ReactPlayer url='https://www.youtube.com/watch?v=LHm7CvkcgLk' width='100%' /> */}
+                                    <ReactPlayer url='https://youtu.be/9xDhs6cC9VA' width='100%' />
                                 </Col>
                                 <Col md={{ order: 2, span: 12 }} xs={{ order: 1, span: 24 }}>
                                     <ReactPlayer url='https://www.youtube.com/watch?v=Gwir1XYFAgQ' width='100%' />
