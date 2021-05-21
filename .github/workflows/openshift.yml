@@ -53,8 +53,8 @@ env:
   OPENSHIFT_NAMESPACE: cafs_ptb_landing_rnd
 
   # If you wish to manually provide the APP_NAME and TAG, set them here, otherwise they will be auto-detected.
-  APP_NAME: ""
-  TAG: ""
+  APP_NAME: cafs_ptb_landing_rnd
+  TAG: 1.0
 
 on:
   # https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows
