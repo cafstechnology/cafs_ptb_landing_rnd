@@ -35,7 +35,7 @@ name: OpenShift
 # https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets
 env:
   # ⬇️ EDIT with your registry and registry path.
-  REGISTRY: docker.io/erizakaria
+  REGISTRY: https://docker.io/erizakaria
   # ⬇️ EDIT with your registry username.
   REGISTRY_USER: erizakaria
   REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
