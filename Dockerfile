@@ -9,8 +9,9 @@ ENV PORT 3000
 EXPOSE 3000
 
 COPY package*.json ./
+USER node
 RUN npm ci
-COPY . ./
+COPY --chown=node:node . ./
 RUN npm run build
 RUN npm prune --production
 
