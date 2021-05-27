@@ -1,17 +1,17 @@
-# pull official base image
-FROM node:13.12.0-alpine
+# build environment
+FROM node:9.6.1 as builder
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
+COPY package.json /usr/src/app/package.json
+RUN npm install --silent
+RUN npm install react-scripts@1.1.1 -g --silent
+COPY . /usr/src/app
+RUN npm run build
 
-# set the working dir for container
-WORKDIR /frontend
 
-# copy the json file first
-COPY ./package.json /frontend
-
-# install npm dependencies
-RUN npm install
-
-# copy other project files
-COPY . .
-
-# build the folder
-CMD [ "npm", "run", "start" ]
+# production environment
+FROM nginx:1.13.9-alpine
+COPY --from=builder /usr/src/app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
