@@ -1,19 +1,20 @@
-FROM node:14-alpine
-USER node
-LABEL author="cafs.technology@gmail.com"
+# pull official base image
+FROM node:13.12.0-alpine
 
-WORKDIR /home/node
+# set working directory
+WORKDIR /app
 
-ENV NODE_ENV prod
-ENV PORT 3000
-EXPOSE 3000
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
 
-COPY --chown=node:node package.json .
+# install app dependencies
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm install --silent
+RUN npm install react-scripts@3.4.1 -g --silent
 
-RUN npm ci
-COPY --chown=node:node . ./
+# add app
+COPY . ./
 
-RUN npm run build
-RUN npm prune --production
-
-ENTRYPOINT [ "npm", "start" ]
+# start app
+CMD ["npm", "start"]
