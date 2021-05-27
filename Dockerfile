@@ -2,7 +2,7 @@ FROM node:14-alpine
 
 LABEL author="cafs.technology@gmail.com"
 
-WORKDIR /app
+WORKDIR /home/node
 
 ENV NODE_ENV prod
 ENV PORT 3000
