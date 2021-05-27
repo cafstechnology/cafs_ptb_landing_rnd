@@ -11,7 +11,7 @@ EXPOSE 3000
 COPY package*.json ./
 USER 1000630000
 RUN npm ci
-COPY --chown=node:node . ./
+COPY --chown=1000630000:1000630000 . ./
 RUN npm run build
 RUN npm prune --production
 
