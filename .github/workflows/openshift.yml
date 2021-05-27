@@ -50,11 +50,11 @@ env:
   APP_PORT: 3000
 
   # ⬇️ EDIT if you wish to set the kube context's namespace after login. Leave blank to use the default namespace.
-  OPENSHIFT_NAMESPACE: ""
+  OPENSHIFT_NAMESPACE: sample-app
 
   # If you wish to manually provide the APP_NAME and TAG, set them here, otherwise they will be auto-detected.
-  APP_NAME: ""
-  TAG: 
+  APP_NAME: sample-app
+  TAG: 1.1
 
 on:
   # https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows
