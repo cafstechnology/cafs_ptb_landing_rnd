@@ -9,7 +9,7 @@ ENV PORT 3000
 EXPOSE 3000
 
 COPY package*.json ./
-USER node
+USER 1000630000
 RUN npm ci
 COPY --chown=node:node . ./
 RUN npm run build
