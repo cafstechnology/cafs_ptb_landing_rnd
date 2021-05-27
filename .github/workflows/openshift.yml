@@ -50,11 +50,11 @@ env:
   APP_PORT: 3000
 
   # ⬇️ EDIT if you wish to set the kube context's namespace after login. Leave blank to use the default namespace.
-  OPENSHIFT_NAMESPACE: cafs_ptb_landing_rnd
+  OPENSHIFT_NAMESPACE: ""
 
   # If you wish to manually provide the APP_NAME and TAG, set them here, otherwise they will be auto-detected.
-  APP_NAME: cafs_ptb_landing_rnd
-  TAG: 1.0
+  APP_NAME: ""
+  TAG: 
 
 on:
   # https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows
