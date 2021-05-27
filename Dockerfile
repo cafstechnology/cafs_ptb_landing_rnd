@@ -9,7 +9,7 @@ ENV PORT 3000
 EXPOSE 3000
 
 COPY --chown=node:node package.json .
-COPY --chown=node:node yarn.lock .
+
 
 
 RUN npm ci
