@@ -44,7 +44,7 @@ const App = () => {
     const wrapperRef = useRef(null);
 
     const navigations = [
-        { text: 'BERANDA', link: '#' },
+        { text: 'BERANDA', link: '!#' },
         { text: 'TENTANG PTB', link: '#aboutptb' },
         { text: 'PERSYARATAN', link: '#requirement' },
         { text: 'TAHAPAN', link: '#stepflow' },
